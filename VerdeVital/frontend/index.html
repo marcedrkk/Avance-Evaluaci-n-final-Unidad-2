@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VerdeVital - Inicio</title>
+  <link rel="stylesheet" href="assets/css/style2.css" />
+</head>
+<body>
+  <header>
+    <h1>VerdeVital</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="admin.html" id="enlaceAdmin" class="hidden">Administrar</a>
+      <button id="btnLogin">Ingresar</button>
+      <div class="cart" id="btnCarrito">🛒 <span id="carritoCount">0</span></div>
+    </nav>
+  </header>
+  <main class="text-center">
+    <h2>Bienvenido a VerdeVital</h2>
+    <p>Conectamos naturaleza y tecnología para un futuro sostenible.</p>
+    <div class="opciones-inicio">
+      <div class="producto">
+        <h3>Explorar productos</h3>
+        <a href="productos.html"><button>Ver Productos</button></a>
+      </div>
+      <div class="producto">
+        <h3>Contáctanos</h3>
+        <a href="contacto.html"><button>Ir a Contacto</button></a>
+      </div>
+    </div>
+  </main>
+  <footer><p>&copy; 2025 VerdeVital. Todos los derechos reservados.</p></footer>
+  <!-- Modales login, carrito, success -->
+  <div id="modalLogin" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" data-close="modalLogin">&times;</span>
+      <h3>Iniciar sesión</h3>
+      <input type="text" id="loginUsuario" placeholder="Usuario" />
+      <input type="password" id="loginContrasena" placeholder="Contraseña" />
+      <button id="btnEntrar">Entrar</button>
+    </div>
+  </div>
+  <div id="modalCarrito" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" data-close="modalCarrito">&times;</span>
+      <h3>Carrito de compras</h3>
+      <div id="carritoContenido"></div>
+      <button id="btnFinalizarCompra">Finalizar Compra</button>
+    </div>
+  </div>
+  <div id="modalSuccess" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" data-close="modalSuccess">&times;</span>
+      <h3>¡Compra realizada con éxito!</h3>
+      <p>Gracias por confiar en VerdeVital.</p>
+    </div>
+  </div>
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>

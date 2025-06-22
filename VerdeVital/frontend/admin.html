@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel de Administración - VerdeVital</title>
+  <link rel="stylesheet" href="assets/css/style2.css" />
+</head>
+<body>
+  <header>
+    <h1>VerdeVital</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Administración de Productos</h2>
+    
+    <!-- Formulario para agregar producto -->
+    <form id="formAgregarProducto" class="form-admin">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Nombre del producto" required />
+
+      <label for="precio">Precio:</label>
+      <input type="number" id="precio" placeholder="Precio" step="0.01" required />
+
+      <label for="stock">Stock:</label>
+      <input type="number" id="stock" placeholder="Cantidad" required />
+
+      <button type="submit">Agregar producto</button>
+    </form>
+
+    <!-- Tabla para visualizar y gestionar productos -->
+    <table id="tablaAdmin">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 VerdeVital.</p>
+  </footer>
+
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>
